@@ -1,0 +1,49 @@
+@value mediaQuery from "../../common/size.css";
+
+.section {
+  width: 100vw;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: inherit;
+}
+
+.span {
+  font-size: 1rem;
+}
+
+.barHam,
+.barStick {
+  display: none;
+}
+
+.list {
+  display: none;
+}
+
+@media screen and (max-width: mediaQuery) {
+  .barHam,
+  .barStick {
+    display: inline;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .stick {
+    display: none;
+  }
+
+  .list {
+    display: inline;
+  }
+}

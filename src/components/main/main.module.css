@@ -1,0 +1,27 @@
+@value mediaQuery from "../../common/size.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.btn {
+  margin-top: 50px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: mediaQuery) {
+} ;
