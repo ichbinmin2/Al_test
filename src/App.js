@@ -1,8 +1,9 @@
-import "./App.css";
-import Main from "./components/main/main";
+import './App.css';
+import Main from './components/main/main';
+import SignUp from './components/signUp/signUp';
 
 function App() {
-  return <Main />;
+  return <SignUp />;
 }
 
 export default App;

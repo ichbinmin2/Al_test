@@ -5,8 +5,13 @@
 }
 
 .section {
+  position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.modalContainer {
+  position: absolute;
 }
 
 .mainContainer {
@@ -14,7 +19,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
 }
 
 .btn {
@@ -24,4 +33,4 @@
 }
 
 @media screen and (max-width: mediaQuery) {
-} ;
+}

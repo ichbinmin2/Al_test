@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import styles from './header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const Header = (props) => {
-  const [checked, setChecked] = useState(false);
-
-  const onCheckBox = () => {
-    setChecked(!checked);
-    console.log(checked);
-  };
+const Header = ({ onCheckBox, checked }) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -22,19 +16,12 @@ const Header = (props) => {
               onClick={onCheckBox}
             />
             <div className={styles.menu}>
-              <FontAwesomeIcon
-                icon={faTimes}
-                className={`${styles.barStick} ${
-                  checked !== true && styles.stick
-                }`}
-                onClick={onCheckBox}
-              />
               <ul className={styles.list}>
                 <li className={styles.service}>
                   <span className={styles.span}>서비스</span>
                 </li>
                 <li className={styles.mypage}>
-                  <span className={styles.span}>마이페이지</span>
+                  <span className={styles.span}>회원가입</span>
                 </li>
                 <li className={styles.login}>
                   <span className={styles.span}>로그인</span>
